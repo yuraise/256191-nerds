@@ -275,8 +275,15 @@ body {
 	background-color: #efc849;
 }
 
-.products .container {
-	border-bottom: 2px solid #eee;
+.underline::after {
+	content: "";
+	width: 100%;
+	height: 2px;
+	background-color: #eee;
+}
+
+.studio {
+	background-color: white;
 }
 
 .studio-description {
@@ -286,11 +293,142 @@ body {
 
 .studio-advantages {
 	float: right;
-	width: 380px;
+	width: 360px;
+	padding-top: 38px;
+	margin-bottom: 61px;
 }
 
 .studio-title {
 	font-weight: 500;
 	font-size: 45px;
 	line-height: 45px;
+	padding-top: 28px;
+	margin-bottom: 32px;
 }
+
+.studio-title span {
+	letter-spacing: 0.5px;
+}
+
+.list-title {
+	text-transform: uppercase;
+	font-weight: 700;
+	padding-top: 23px;
+	margin-bottom: 23px;
+}
+
+.studio ul {
+	list-style: none;
+	padding: 0;
+}
+
+.orders li {
+	position: relative;
+	padding-left: 36px;
+	margin-bottom: 25px;
+}
+
+.orders li::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 2px;
+	width: 24px;
+	height: 2px;
+	background: #fb565a;
+}
+
+.studio-advantages img {
+	display: block;
+}
+
+.precision {
+	margin-left: 18px;
+	padding-top: 20px;
+	margin-bottom: 54px;
+}
+
+.percentages li {
+	float: left;
+	width: 120px;
+	line-height: 18px;
+}
+
+.percentage-quantity {
+	position: relative;
+	height: 45px;
+	font-size: 45px;
+	font-weight: 700;
+	margin-bottom: 6px;
+}
+
+.percentage-sign {
+	position: absolute;
+	font-size: 28px;
+	top: -8px;
+}
+
+.logos {
+	background-color: white;
+	margin-bottom: 75px;
+}
+
+.logos .container{
+	padding-top: 45px;
+	min-height: 180px;
+	font-size: 0;
+}
+
+.logo-wrapper {
+	display: inline-block;
+	width: 300px;
+	text-align: center;
+	vertical-align: top;
+}
+
+.logos img {
+	vertical-align: middle;
+	opacity: 0.2;
+}
+
+.logos img:hover {
+	opacity: 1;
+}
+
+.logos img:active {
+	opacity: 0.1;
+}
+
+.logo-wrapper:nth-of-type(1),
+.logo-wrapper:nth-of-type(4) {
+	margin-top: 8px;
+	width: 260px;
+	margin-bottom: 44px;
+}
+
+.logo-wrapper:nth-of-type(1),
+.logo-wrapper:nth-of-type(3) {
+	margin-top: 17px;
+}
+
+.logo-wrapper:nth-of-type(2) {
+	position: relative;
+	margin-left: 20px; 
+}
+
+.logo-wrapper:nth-of-type(3) {
+	margin-right: 20px;
+}
+
+.logo-wrapper:nth-of-type(2)::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 2px;
+	height: 50px;
+	background-color: #eee;
+	box-shadow: 300px 0 #eee, 600px 0 #eee;
+}
+
