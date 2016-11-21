@@ -11,7 +11,10 @@ body {
 	width: 1200px;
 	padding: 0 20px;
 	margin: 0 auto;
-	outline: 1px solid red;
+}
+
+.features .container {
+	position: relative;
 }
 
 .clearfix::after {
@@ -23,14 +26,12 @@ body {
 .page-header {
 	width: 100%;
 	background-color: #eee;
-	outline: 1px solid blue;
 }
 
 .logo {
 	float: left;
 	width: 160px;
 	margin-top: 50px;
-	outline: 1px solid red;
 }
 
 .logo img {
@@ -58,7 +59,6 @@ body {
 	float: right;
 	width: 160px;
 	text-align: right;
-	outline: 1px solid red;
 }
 
 .cart a {
@@ -67,7 +67,6 @@ body {
 	width: 115px;
 	padding-left: 40px;
 	margin-left: 45px;
-	outline: 1px solid red;
 }
 
 .cart a::before {
@@ -83,7 +82,6 @@ body {
 .main-menu {
 	float: left;
 	width: 840px;
-	outline: 1px solid yellow;
 }
 
 .main-menu > ul {
@@ -99,7 +97,6 @@ body {
 	font-size: 16px;
 	margin-right: 47px;
 	box-sizing: border-box;
-	outline: 1px solid red;
 }
 
 .main-menu li:last-of-type {
@@ -134,7 +131,6 @@ body {
 }
 
 .features-content {
-	position: relative;
 	height: 431px;
 	display: none;
 }
@@ -152,7 +148,6 @@ body {
 }
 
 .features-title {
-	outline: 1px solid red;
 	margin: 0px;
 	padding-top: 75px;
 	margin-bottom: 27px;
@@ -163,7 +158,6 @@ body {
 }
 
 .features-description {
-	outline: 1px solid red;
 	margin: 0px;
 	margin-bottom: 40px;
 	width: 410px;
@@ -196,7 +190,7 @@ body {
 
 .slider-toggles {
 	position: absolute;
-	bottom: 120px;
+	bottom: 102px;
 	left: 50%;
 	transform: translateX(-50%);
 	width: 78px;
@@ -231,4 +225,72 @@ body {
 
 .label-3 {
 	float: right;
+}
+
+.products {
+	background-color: white;
+}
+
+.product {
+	float: left;
+	width: 300px;
+	margin-right: 100px;
+	margin-top: 80px;
+}
+
+.product:last-of-type {
+	margin-right: 0;
+}
+
+.product-image {
+	display: block;
+}
+
+.product-name {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+
+.product-description {
+	width: 245px;
+	margin-bottom: 33px;
+}
+
+.order-btn {
+	box-sizing: border-box;
+	display: block;
+	width: 160px;
+	padding: 13px 40px;
+	margin-bottom: 82px;
+}
+
+.btn-green {
+	background-color: #00ca74;
+}
+
+.btn-yellow {
+	background-color: #efc849;
+}
+
+.products .container {
+	border-bottom: 2px solid #eee;
+}
+
+.studio-description {
+	float: left;
+	width: 680px;
+}
+
+.studio-advantages {
+	float: right;
+	width: 380px;
+}
+
+.studio-title {
+	font-weight: 500;
+	font-size: 45px;
+	line-height: 45px;
 }
