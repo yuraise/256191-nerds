@@ -370,7 +370,6 @@ body {
 
 .logos {
 	background-color: white;
-	margin-bottom: 75px;
 }
 
 .logos .container{
@@ -432,3 +431,9 @@ body {
 	box-shadow: 300px 0 #eee, 600px 0 #eee;
 }
 
+.map {
+	height: 416px;
+	margin-top: 75px;
+	background: white url("../img/map.png");
+	background-size: cover;
+}
