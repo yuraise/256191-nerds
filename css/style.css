@@ -162,6 +162,7 @@ body {
 	color: white;
 	text-transform: uppercase;
 	text-decoration: none;
+	border-radius: 5px;
 }
 
 .features-btn {
@@ -221,6 +222,12 @@ body {
 
 .label-3 {
 	float: right;
+}
+
+.products,
+.studio,
+.logos {
+	border-bottom: 2px solid #eee;
 }
 
 .product {
@@ -417,9 +424,112 @@ body {
 	box-shadow: 300px 0 #eee, 600px 0 #eee;
 }
 
-.map {
+.footer-map {
+	position: relative;
 	height: 416px;
 	margin-top: 80px;
 	background: white url("../img/map.png");
 	background-size: cover;
+}
+
+.footer-contacts {
+	padding: 50px;
+	background-color: white;
+	width: 220px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.contacts-title {
+	margin: 0;
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+}
+
+.contacts-adress {
+	margin: 25px 0 15px;
+	padding: 0;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.contacts-phone {
+	margin: 0;
+	padding: 0;
+}
+
+.btn-contacts {
+	display: block;
+	padding: 14px 45px;
+	margin-top: 35px;
+}
+
+.footer-bottom {
+	padding-top: 70px;
+}
+
+.social-btns {
+	float: left;
+}
+
+.social-btn {
+	position: relative;
+	display: block;
+	float: left;
+	width: 78px;
+	height: 78px;
+	border-radius: 50%;
+	background-color: #e1e1e1;
+	margin-right: 12px;
+	margin-bottom: 70px;
+}
+
+.social-btn:hover {
+	background: #e74246;
+}
+
+.social-btn:active {
+	background: #d7373b;
+}
+
+.social-btn::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background-repeat: no-repeat;
+}
+
+.vk-icon::before {
+	background-image: url("../img/sprite/vk-icon.png");
+	width: 26px;
+	height: 15px;
+}
+
+.fb-icon::before {
+	background-image: url("../img/sprite/fb-icon.png");
+	width: 12px;
+	height: 22px;
+}
+
+.insta-icon::before {
+	background-image: url("../img/sprite/insta-icon.png");
+	width: 21px;
+	height: 21px;
+}
+
+.appeal {
+	float: left;
+	width: 595px;
+	margin-left: 130px;
+	line-height: 30px;
+}
+
+.appeal b {
+	font-size: 36px;
+	line-height: 45px;
+	font-weight: 700;
 }
