@@ -13,10 +13,6 @@ body {
 	margin: 0 auto;
 }
 
-.features .container {
-	position: relative;
-}
-
 .clearfix::after {
 	content: "";
 	display: table;
@@ -24,7 +20,6 @@ body {
 }
 
 .page-header {
-	width: 100%;
 	background-color: #eee;
 }
 
@@ -103,7 +98,7 @@ body {
 	margin-right: 0;
 }
 
-.page-header a {
+.header-top a {
 	display: block;
 	padding-bottom: 9px;
 	text-decoration: none;
@@ -114,20 +109,20 @@ body {
 	padding-bottom: 0;
 }
 
-.page-header .active {
+.header-top .active {
 	border-bottom: 2px solid #fb565a;
 }
 
-.page-header a:hover {
+.header-top a:hover {
 	color: #fb565a;
 }
 
-.page-header a:active {
+.header-top a:active {
 	color: #a6a6a6;
 }
 
-.features {
-	background: #eee; 
+.slider {
+	position: relative;
 }
 
 .features-content {
@@ -174,17 +169,18 @@ body {
 	box-sizing: border-box;
 	width: 242px;
 	padding: 13px 55px;
+	color: white;
 }
 
 .btn-red {
 	background-color: #fb565a;
 }
 
-.features input {
+.slider input {
 	display: none;
 }
 
-.features input:checked + .features-content {
+.slider input:checked + .features-content {
 	display: block;
 }
 
@@ -196,7 +192,7 @@ body {
 	width: 78px;
 }
 
-.features label {
+.slider label {
 	display: block;
 	width: 4px;
 	height: 4px;
@@ -225,10 +221,6 @@ body {
 
 .label-3 {
 	float: right;
-}
-
-.products {
-	background-color: white;
 }
 
 .product {
@@ -280,10 +272,6 @@ body {
 	width: 100%;
 	height: 2px;
 	background-color: #eee;
-}
-
-.studio {
-	background-color: white;
 }
 
 .studio-description {
@@ -368,13 +356,8 @@ body {
 	top: -8px;
 }
 
-.logos {
-	background-color: white;
-}
-
-.logos .container{
+.logos{
 	padding-top: 45px;
-	min-height: 180px;
 	font-size: 0;
 }
 
@@ -401,7 +384,7 @@ body {
 .logo-wrapper:nth-of-type(1),
 .logo-wrapper:nth-of-type(4) {
 	margin-top: 8px;
-	width: 260px;
+	width: 280px;
 	margin-bottom: 44px;
 }
 
@@ -412,11 +395,14 @@ body {
 
 .logo-wrapper:nth-of-type(2) {
 	position: relative;
-	margin-left: 20px; 
 }
 
-.logo-wrapper:nth-of-type(3) {
-	margin-right: 20px;
+.logo-wrapper:nth-of-type(1) img {
+	margin-right: 15px;
+}
+
+.logo-wrapper:nth-of-type(4) img {
+	margin-left: 15px;
 }
 
 .logo-wrapper:nth-of-type(2)::before {
@@ -433,7 +419,7 @@ body {
 
 .map {
 	height: 416px;
-	margin-top: 75px;
+	margin-top: 80px;
 	background: white url("../img/map.png");
 	background-size: cover;
 }
