@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nerd's catalog</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet"> 
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="page-header page-header-inner">
+		<div class="container">
+			<header class="header-top clearfix">
+				<div class="logo">
+					<a><img src="img/nerds-logo.png" alt="Nerds" width="160" height="65"></a>
+				</div>
+				<nav class="main-menu">
+					<ul>
+						<li><a href="#">Студия</a></li>
+						<li><a href="#">Клиенты</a></li>
+						<li><a href="#">Магазин</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="cart"><a href="#">Корзина</a></div>
+			</header>
+			<h1 class="inner-page-title">Магазин готовых шаблонов</h1>
+		</div>
+	</header>
+	<main class="main container">
+		<div class="filters">
+			<div class="price-range">
+				<div class="filter-title">Стоимость:</div>
+				<div class="range-controls">
+					<div class="scale">
+						<div class="bar"></div>
+						<div class="range-toggle range-toggle-min"></div>
+						<div class="range-toggle range-toggle-max"></div>
+					</div>
+				</div>
+				<div class="price-controls clearfix">
+					<div class="price-control price-control-min">
+						<label for="price-min">ОТ</label>
+						<input type="text" name="price-min" id="price-min" value="0">
+					</div>
+					<div class="price-control price-control-max">
+						<label for="price-max">ДО</label>
+						<input type="text" name="price-max" id="price-max" value="15 000">
+					</div>
+				</div>
+			</div>
+			<div class="grid">
+				<div class="filter-title">Сетка:</div>
+				<input type="radio" name="grid" id="adaptive" checked>
+				<label for="adaptive">Адаптивная</label>
+				<input type="radio" name="grid" id="fixed">
+				<label for="fixed">Фиксированная</label>
+				<input type="radio" name="grid" id="flexible">
+				<label for="flexible">Резиновая</label>
+			</div>
+			<div class="features">
+				<div class="filter-title">Особенности:</div>
+				<input type="checkbox" name="slider" id="slider" checked>
+				<label for="slider">Слайдер</label>
+				<input type="checkbox" name="advantages" id="advantages">
+				<label for="advantages">Блок преимуществ</label>
+				<input type="checkbox" name="news" id="news" checked>
+				<label for="news">Новости</label>
+				<input type="checkbox" name="gallery" id="gallery">
+				<label for="gallery">Галерея</label>
+				<input type="checkbox" name="cart" id="cart">
+				<label for="cart">Корзина</label>
+			</div>
+			<button type="submit" class="show-btn">Показать</button>
+		</div>
+		<div class="templates">
+			
+		</div>
+		<div class="pagination">
+			
+		</div>
+	</main>
+</body>
+</html>

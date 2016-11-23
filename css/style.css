@@ -533,3 +533,237 @@ body {
 	line-height: 45px;
 	font-weight: 700;
 }
+
+					/*INNER*/					
+.page-header-inner {
+	padding-bottom: 110px;
+}
+
+.inner-page-title {
+	font-size: 55px;
+	line-height: 55px;
+	font-weight: 500;
+	margin: 0;
+	padding-top: 76px;
+	text-align: center;
+}
+
+.main {
+	padding: 54px 20px;
+}
+
+.filters {
+	float: left;
+	width: 260px;
+}
+
+.templates {
+	float: right;
+	width: 760px;
+}
+
+.filter-title {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.3px;
+}
+
+.price-range .filter-title {
+	margin-bottom: 48px;
+}
+
+.range-controls {
+	position: relative;
+	height: 80px;
+	background-color: #eee;
+	margin-bottom: 14px;
+	border-radius: 3px;
+}
+
+.scale {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 27px;
+	width: 215px;
+	height: 2px;
+	background-color: #d7dcde;
+}
+
+.bar {
+	width: 67%;
+	height: 2px;
+	background-color: #00ca74;
+}
+
+.range-toggle {
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	background-color: #ababab;
+	border: 8px solid white;
+	box-shadow: 0 2px 0 0 #ccc;
+}
+
+.range-toggle-max {
+	left: 67%;
+}
+
+.price-controls {
+	margin-bottom: 55px;
+}
+
+.price-control {
+	width: 116px;
+}
+
+.price-control-min {
+	float: left;
+}
+
+.price-control-max {
+	float: right;
+}
+
+.price-controls input {
+	width: 80px;
+	background: #eee;
+	text-align: center;
+	border: none;
+	outline: none;
+	margin-left: 7px;
+	line-height: 36px;
+	border-radius: 3px;
+	vertical-align: middle;
+	font-family: "Roboto","Arial", sans-serif;
+}
+
+.grid {
+	margin-bottom: 45px;
+}
+
+.grid .filter-title {
+	margin-bottom: 12px;
+}
+
+
+.grid input {
+	display: none;
+}
+
+.grid label {
+	position: relative;
+	padding-left: 38px;
+	display: block;
+	margin-bottom: 16px;
+}
+
+.grid label::before {
+	position: absolute;
+	top: 50%;
+	left: 7px;
+	transform: translateY(-50%);
+	content: "";
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background-color: white;
+	border: 5px solid white;
+	box-shadow: 0 0 0 4px #b8b8b8;
+}
+
+.grid input:checked + label::before {
+	background-color: #b8b8b8;
+}
+
+.grid input:checked + label:hover:before {
+	background-color: #000;
+}
+
+.grid input:checked + label:active:before {
+	background-color: #ededed;
+}
+
+.grid label:hover:before {
+	box-shadow: 0 0 0 4px #000;
+}
+
+.grid label:active:before {
+	box-shadow: 0 0 0 4px #ededed;
+}
+
+.features {
+	margin-bottom: 48px;
+}
+
+.features input {
+	display: none;
+}
+.features label {
+	position: relative;
+	display: block;
+	padding-left: 37px;
+	margin-bottom: 16px;
+}
+
+.features label::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 23px;
+	height: 23px;
+	left: 0;
+	background: url("../img/sprites.png") no-repeat -50px -50px;
+}
+
+.features label:hover:before {
+	background-position: -100px -50px;
+}
+
+.features label:disabled:before {
+	background-position: -150px -50px;
+}
+
+.features .filter-title {
+	margin-bottom: 12px;
+}
+
+.features input:checked + label::before {
+	width: 27px;
+	background-position: -50px -125px;
+}
+
+.features input:checked + label:hover:before {
+	background-position: -100px -125px;
+}
+
+.features input:checked + label:disabled:before {
+	background-position: -150px -125px;
+}
+
+.show-btn {
+	width: 100%;
+	padding: 17px 0;
+	text-transform: uppercase;
+	font-family: "Roboto", "Arial", sans-serif;
+	font-weight: 500;
+	background: #eee;
+	border: none;
+	border-radius: 5px;
+	margin-bottom: 30px;
+}
+
+.show-btn:hover {
+	background: #dfdfdf;
+}
+
+.show-btn:active {
+	background: #d5d5d5;
+	color: #959595;
+}

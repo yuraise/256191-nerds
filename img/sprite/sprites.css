@@ -1,0 +1,40 @@
+.checkbox-off, .checkbox-off-hvr, .checkbox-off-dis, .checkbox-on, .checkbox-on-hvr, .checkbox-on-dis{
+	background: url(sprites.png) no-repeat;
+}
+
+.checkbox-off{
+	background-position: -50px -50px ;
+	width: 23px;
+	height: 23px;
+}
+
+.checkbox-off-hvr{
+	background-position: -100px -50px ;
+	width: 23px;
+	height: 23px;
+}
+
+.checkbox-off-dis{
+	background-position: -150px -50px ;
+	width: 23px;
+	height: 23px;
+}
+
+.checkbox-on{
+	background-position: -50px -125px ;
+	width: 27px;
+	height: 23px;
+}
+
+.checkbox-on-hvr{
+	background-position: -100px -125px ;
+	width: 27px;
+	height: 23px;
+}
+
+.checkbox-on-dis{
+	background-position: -150px -125px ;
+	width: 27px;
+	height: 23px;
+}
+
