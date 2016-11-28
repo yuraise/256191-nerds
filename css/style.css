@@ -1,4 +1,5 @@
 body {
+	position: relative;
 	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 24px;
@@ -972,4 +973,112 @@ body {
 
 .inner-footer {
 	margin-top: 0;
+}
+
+.write-us {
+	display: none;
+	position: absolute;
+	bottom: 180px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 960px;
+	background: white;
+	padding: 65px 100px 80px;
+	box-sizing: border-box;
+	box-shadow: 0 10px 25px 0 #666;
+}
+
+.form-show {
+	display: block;
+}
+
+.form-caption {
+	font-weight: 500;
+	font-size: 45px;
+	line-height: 45px;
+	margin-bottom: 40px;
+}
+
+.form-block {
+	width: 360px;
+}
+
+.form-name {
+	float: left;
+}
+
+.form-email {
+	float: right;
+}
+
+.write-us label {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 700;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.write-us input {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	border: 3px solid #eee;
+}
+
+.letter-block {
+	clear: both;
+	margin-top: 30px;
+}
+
+.write-us textarea {
+	width: 100%;
+	border: 3px solid #eee;
+	padding: 10px;
+}
+
+.btn-send {
+	padding: 13px 85px;
+	border: none;
+	margin-top: 50px;
+}
+
+.btn-cross {
+	content: "";
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	background: white;
+	right:80px;
+	top: 80px;
+	border: none;
+}
+
+.btn-cross::before,
+.btn-cross::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	width: 4px;
+	height: 28px;
+	background: #fb565a;
+	opacity: 0.3;
+}
+
+.btn-cross:hover:before,
+.btn-cross:hover:after {
+	opacity: 1;
+}
+
+.btn-cross:active:before,
+.btn-cross:active:after {
+	opacity: 0.1;
+}
+
+.btn-cross::before {
+	transform: rotate(-45deg);
+}
+
+.btn-cross::after {
+	transform: rotate(45deg);
 }
